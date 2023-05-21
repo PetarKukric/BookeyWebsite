@@ -1,0 +1,636 @@
+{
+	"info": {
+		"_postman_id": "869d8c82-94f6-49ea-a515-e7635fcf6e77",
+		"name": "Booking App",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18164599"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Register Admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Kashif\",\n    \"email\": \"kashif@gmail.com\",\n    \"password\": \"Kashi221\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Normal User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Huzaifah\",\n    \"email\": \"huzaifahtariq08@gmail.com\",\n    \"password\": \"Huzi281199\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"huzaifahtariq08@gmail.com\",\n    \"password\": \"Huzi281199\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjoyLCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjg0NTcwODU2LCJleHAiOjE2ODUxNzU2NTZ9.aEIFBV686gXiYLah1m7EhQNG-p4oFIR5viIL-cgcZqg; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 27 May 2023 08:20:56 GMT;",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User by Email",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjoyLCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjg0NTc0MDYyLCJleHAiOjE2ODUxNzg4NjJ9.2z-EAtVIRjBFaNVyh6VxizkBTmoTNYqItCB0h8-k158; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 27 May 2023 09:14:22 GMT;",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjoyLCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjg0NTc0MDYyLCJleHAiOjE2ODQ1Nzc2NjJ9.382wF5nLuYFpqicQHdiKD4t9UyFboKoETj1PIC9cz70; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 20 May 2023 10:14:22 GMT;",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"huzaifahtariq08@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imthc2hpZkBnbWFpbC5jb20iLCJVc2VyX0lEIjozLCJOYW1lIjoiS2FzaGlmIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjg0NTc2NjM0LCJleHAiOjE2ODQ1ODAyMzR9.YZHH_CUjOr03Xf12tnWwv2cHp0ZwYpV8e0EPnEnzj-o; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 20 May 2023 10:57:14 GMT;",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imthc2hpZkBnbWFpbC5jb20iLCJVc2VyX0lEIjozLCJOYW1lIjoiS2FzaGlmIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjg0NTc2NjM0LCJleHAiOjE2ODUxODE0MzR9.MlZN_SkhOUzp8yrQuSLaeLqrWZ_qdGz958x82dz_IMA; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 27 May 2023 09:57:14 GMT;",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imthc2hpZkBnbWFpbC5jb20iLCJVc2VyX0lEIjozLCJOYW1lIjoiS2FzaGlmIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjg0NTc2NjM0LCJleHAiOjE2ODQ1ODAyMzR9.YZHH_CUjOr03Xf12tnWwv2cHp0ZwYpV8e0EPnEnzj-o; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 20 May 2023 10:57:14 GMT;",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imthc2hpZkBnbWFpbC5jb20iLCJVc2VyX0lEIjozLCJOYW1lIjoiS2FzaGlmIiwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNjg0NTc2NjM0LCJleHAiOjE2ODUxODE0MzR9.MlZN_SkhOUzp8yrQuSLaeLqrWZ_qdGz958x82dz_IMA; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 27 May 2023 09:57:14 GMT;",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"huzaifahtariq08@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Services",
+			"item": [
+				{
+					"name": "Create Service",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NDU4NDgzM30.V8UxySaSNHtyDBbDFNRGqnzIG4fer4OUmbscVBWvjfc; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 20 May 2023 12:13:53 GMT;",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NTE4NjAzM30.DMXbKXaIWtHSKazaPCf8RfGRDnGqw8_vvYeXQgnpdk8; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 27 May 2023 11:13:53 GMT;",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Service 3\",\n  \"location\": \"Service Location\",\n  \"timestamp\": \"2023-05-20T10:00:00Z\",\n  \"youtubeUrl\": \"https://www.youtube.com/channel/your-channel\",\n  \"instagramUrl\": \"https://www.instagram.com/your-account\",\n  \"twitterUrl\": \"https://twitter.com/your-account\",\n  \"facebookUrl\": \"https://www.facebook.com/your-page\",\n  \"coordinates\": \"40.7128,-74.0060\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/services",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Service",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NDU4NDgzM30.V8UxySaSNHtyDBbDFNRGqnzIG4fer4OUmbscVBWvjfc; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 20 May 2023 12:13:53 GMT;",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NTE4NjAzM30.DMXbKXaIWtHSKazaPCf8RfGRDnGqw8_vvYeXQgnpdk8; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 27 May 2023 11:13:53 GMT;",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Service 3\",\n  \"location\": \"Service\",\n  \"timestamp\": \"2023-05-20T10:00:00Z\",\n  \"youtubeUrl\": \"\",\n  \"instagramUrl\": \"https://www.instagram.com/your-account\",\n  \"twitterUrl\": \"https://twitter.com/your-account\",\n  \"facebookUrl\": \"https://www.facebook.com/your-page\",\n  \"coordinates\": \"40.7128,-74.0060\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/service/Service 3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"service",
+								"Service 3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Service",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NDU4NDgzM30.V8UxySaSNHtyDBbDFNRGqnzIG4fer4OUmbscVBWvjfc; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 20 May 2023 12:13:53 GMT;",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NTE4NjAzM30.DMXbKXaIWtHSKazaPCf8RfGRDnGqw8_vvYeXQgnpdk8; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 27 May 2023 11:13:53 GMT;",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/service/Service 3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"service",
+								"Service 3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Services",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NDU4NDgzM30.V8UxySaSNHtyDBbDFNRGqnzIG4fer4OUmbscVBWvjfc; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 20 May 2023 12:13:53 GMT;",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NTE4NjAzM30.DMXbKXaIWtHSKazaPCf8RfGRDnGqw8_vvYeXQgnpdk8; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 27 May 2023 11:13:53 GMT;",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/services",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Service By Name",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NDU4NDgzM30.V8UxySaSNHtyDBbDFNRGqnzIG4fer4OUmbscVBWvjfc; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 20 May 2023 12:13:53 GMT;",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NTE4NjAzM30.DMXbKXaIWtHSKazaPCf8RfGRDnGqw8_vvYeXQgnpdk8; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 27 May 2023 11:13:53 GMT;",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Service 3\",\n  \"location\": \"Service Location\",\n  \"timestamp\": \"2023-05-20T10:00:00Z\",\n  \"youtubeUrl\": \"https://www.youtube.com/channel/your-channel\",\n  \"instagramUrl\": \"https://www.instagram.com/your-account\",\n  \"twitterUrl\": \"https://twitter.com/your-account\",\n  \"facebookUrl\": \"https://www.facebook.com/your-page\",\n  \"coordinates\": \"40.7128,-74.0060\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/service/Service 1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"service",
+								"Service 1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Booking Info",
+			"item": [
+				{
+					"name": "Create Booking Info",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NDU4NDgzM30.V8UxySaSNHtyDBbDFNRGqnzIG4fer4OUmbscVBWvjfc; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 20 May 2023 12:13:53 GMT;",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NTE4NjAzM30.DMXbKXaIWtHSKazaPCf8RfGRDnGqw8_vvYeXQgnpdk8; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 27 May 2023 11:13:53 GMT;",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"address\": \"123 Main Street\",\n  \"contact\": \"John Doe\",\n  \"email\": \"huzaifahtariq08@gmail.com\",\n  \"name\": \"Booking Name\",\n  \"message\": \"Booking message\",\n  \"serviceName\": \"Service 2\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/bookingInfo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"bookingInfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Booking Info",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NDU4NDgzM30.V8UxySaSNHtyDBbDFNRGqnzIG4fer4OUmbscVBWvjfc; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 20 May 2023 12:13:53 GMT;",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NTE4NjAzM30.DMXbKXaIWtHSKazaPCf8RfGRDnGqw8_vvYeXQgnpdk8; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 27 May 2023 11:13:53 GMT;",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"address\": \"123 Main Street\",\n  \"contact\": \"John Doe\",\n  \"email\": \"huzaifahtariq08@gmail.com\",\n  \"name\": \"Booking Name\",\n  \"message\": \"Booking message\",\n  \"serviceName\": \"Service 1\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/bookingInfo/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"bookingInfo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Booking Infos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NDU4NDgzM30.V8UxySaSNHtyDBbDFNRGqnzIG4fer4OUmbscVBWvjfc; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 20 May 2023 12:13:53 GMT;",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NTE4NjAzM30.DMXbKXaIWtHSKazaPCf8RfGRDnGqw8_vvYeXQgnpdk8; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 27 May 2023 11:13:53 GMT;",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3000/api/bookingInfos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"bookingInfos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Booking Info By ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NDU4NDgzM30.V8UxySaSNHtyDBbDFNRGqnzIG4fer4OUmbscVBWvjfc; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 20 May 2023 12:13:53 GMT;",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NTE4NjAzM30.DMXbKXaIWtHSKazaPCf8RfGRDnGqw8_vvYeXQgnpdk8; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 27 May 2023 11:13:53 GMT;",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"huzaifahtariq08@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/bookingInfo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"bookingInfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Booking Info",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NDU4NDgzM30.V8UxySaSNHtyDBbDFNRGqnzIG4fer4OUmbscVBWvjfc; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 20 May 2023 12:13:53 GMT;",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "refreshToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6Imh1emFpZmFodGFyaXEwOEBnbWFpbC5jb20iLCJVc2VyX0lEIjo0LCJOYW1lIjoiSHV6YWlmYWgiLCJpc0FkbWluIjp0cnVlLCJpYXQiOjE2ODQ1ODEyMzMsImV4cCI6MTY4NTE4NjAzM30.DMXbKXaIWtHSKazaPCf8RfGRDnGqw8_vvYeXQgnpdk8; Path=/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/code/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/bookey2/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/Order 3/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/Kashif/node_modules/.bin:/home/huzaifah/Documents/Fiverr/Orders/node_modules/.bin:/home/huzaifah/Documents/Fiverr/node_modules/.bin:/home/huzaifah/Documents/node_modules/.bin:/home/huzaifah/node_modules/.bin:/home/node_modules/.bin:/node_modules/.bin:/usr/local/lib/node_modules/npm/node_modules/@npmcli/run-script/lib/node-gyp-bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin; Domain=localhost; Secure; HttpOnly; Expires=Sat, 27 May 2023 11:13:53 GMT;",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"huzaifahtariq08@gmail.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/bookingInfo/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"bookingInfo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

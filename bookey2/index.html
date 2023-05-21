@@ -1,0 +1,260 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee&display=swap" rel="stylesheet">
+<script src="main.js"></script>
+</head>
+<body style="overflow-x: hidden;">
+    
+    
+    <header style="overflow-x: hidden;">
+            
+        <video autoplay loop muted plays-inline class="bgclip">
+            <source src="video/yt1s.com - Signing a document Contract Fountain Pen Signature  Free stock footage HD.mp4" type="video/mp4">
+        </video>
+      
+   
+            <nav style="background-color: transparent;">
+                <img src="img/toplogo.png" alt="" width="200px" id="toplogo">
+                <div class="links">
+                    <ul>
+                      <a href="bookingpage.html">  <li>Kontakt</li></a>
+                        <li>
+                            <a href="bookingpage.html">Kategorier </a>
+                            <ul class="dropdown">
+                                <li> <a href="bookingpage.html"> Renovering </a></li>
+                                <li> <a href="bookingpage.html"> Städning </a></li>
+                                <li> <a href="bookingpage.html">Fastighet </a> </li>
+                                <li> <a href="bookingpage.html"> Fotografi </a></li>
+                                <li> <a href="bookingpage.html"> Restauranger </a></li>
+                                <li> <a href="bookingpage.html"> Transport </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="buttons">
+                    
+                <button id="signupbtnhome" onclick="openSignUpPage()">Skapa ett konto</button>
+                <button id="loginbtnhome" onclick="openLogInPage()">Logga in</button>
+            </div>
+            </nav>
+            <section class="maintrack">  
+        <h1>Sveriges smidigaste sida för att boka tjänster</h1>
+        <div class="headertrack">
+            <div class="categorys">
+            <label for="headertrack">Välj tjänst (kategori)</label>
+            <select name="category" id="category">
+                <option value="photograph">Fotografi</option>
+                <option value="constren">Bygg & Renovering</option>
+                <option value="cleaning">Städning</option>
+                <option value="transport">Flytt & Transport</option>
+                <option value="properties">Fastigheter & BRF</option>
+                <option value="economy">Ekonomi & juridik</option>
+            </select>
+        </div>
+
+        <div class="place">
+            <label for="location">Ange plats</label>
+            <input type="text" name="location" id="location" placeholder="plats">
+            <i class="fa fa-map-marker"  ></i>
+        </div>
+        <div class="datse">
+            <label for="date">Datum</label>
+            <input type="date" name="date" required pattern="\d{4}-\d{2}-\d{2}" placeholder="yyyy-mm-dd">
+        </div>
+        <div class="time">
+            <label for="time">Tid</label>
+            <input type="time" id="time" placeholder="tid">
+        </div>
+<div class="btnwrap">
+           <button>  <b> Sök  </b></button></div>
+        </div>
+        </section>
+    </header>
+    
+    <main style="overflow-x: hidden;">
+        
+           
+
+
+         
+                <div class="service-container-reveal reveal right">
+                    
+                    <img src="img/cleaning.jpg" alt="" width="500px">
+                    
+                    <h2>Städning</h2>
+                    <P>Om du letar efter professionella städtjänster i hela Sverige kan du boka dem enkelt genom Bookey. Vi samarbetar med ett antal pålitliga städföretag som erbjuder en rad olika rengöringstjänster för både privatpersoner och företag.
+
+                        Våra städtjänster inkluderar allt från regelbunden hemstädning och fönsterputsning till flyttstädning och storstädning. Vi kan också ordna specialrengöring, som till exempel rengöring efter renovering eller sanering efter skadedjur.
+                        
+                        Alla våra städföretag är noga utvalda och har erfarna och pålitliga städare som arbetar noggrant och effektivt för att ge dig en ren och fräsch miljö. Vi använder också miljövänliga och hållbara rengöringsprodukter för att minimera vår påverkan på miljön.
+                        
+                        Så om du vill ha en pålitlig och professionell städtjänst i hela Sverige, boka enkelt genom Bookey idag!</P>
+                        <div class="btnwrap">
+                        <a href="bookingpage.html"> <button>BOKA NU</button></a>
+                    </div>
+                </div>
+
+                <div class="service-container-reveal reveal left">
+                    
+                    <img src="img/renovation.jpg" alt="" width="500px">
+                    
+                    <h2>Renovering</h2>
+                    <P>
+                        Här på Bookey erbjuder vi omfattande renoveringstjänster som hjälper dig att göra din drömrenovering till verklighet. Vårt team av erfarna renoveringsexperter har kunskapen och expertisen som krävs för att ta hand om alla dina renoveringsbehov, oavsett om det handlar om att renovera ditt kök, badrum, sovrum eller hela huset.
+                        
+                        Vi arbetar med dig genom hela processen, från att skapa den ursprungliga designen och planeringen, till att genomföra renoveringsarbetet och slutligen leverera det färdiga resultatet. Vi strävar alltid efter att överträffa dina förväntningar och se till att du är helt nöjd med resultatet.
+                        
+                        Vårt företag värdesätter kvalitet och hantverk, vilket betyder att vi alltid använder de bästa materialen och teknikerna för att se till att din renovering håller länge och ser fantastisk ut. Vi tar hand om allt från att installera nya golv och måla väggar, till att bygga om och anpassa befintliga utrymmen.
+                        
+                        Kontakta oss idag för att boka din konsultation och få reda på hur vi kan hjälpa dig att skapa ditt drömhem genom våra omfattande renoveringstjänster.</P>
+
+                        <a href="bookingpage.html"> <button>BOKA NU</button></a>
+                </div>
+                
+
+                <div class="service-container-reveal reveal right">
+                    
+                    <img src="img/realestate.jpg" alt="" width="500px">
+                    
+                    <h2>Fastigheter</h2>
+                    <P>Sälj eller köp din bostad med hjälp av våra erfarna fastighetsmäklare på Bookey Fastigheter. Vi erbjuder skräddarsydda lösningar för att passa dina specifika behov, oavsett om du vill sälja din befintliga bostad eller köpa en ny.
+
+                        Vi har lång erfarenhet och djupgående kunskap om fastighetsmarknaden i din region, vilket gör oss till det perfekta valet för att hjälpa dig att navigera genom köp- och försäljningsprocessen. Vi arbetar tätt med våra kunder för att förstå deras önskemål och mål, och arbetar sedan hårt för att uppnå dem.
+                        
+                        Våra fastighetsmäklare är specialiserade på allt från villor till lägenheter och kommersiella fastigheter. Vi erbjuder också värderingstjänster, marknadsföring och rådgivning för fastighetsinvesteringar.
+                        
+                        Oavsett om du är en förstagångsköpare eller en erfaren fastighetsinvesterare, kan du lita på att vi på Bookey Fastigheter kommer att ge dig det stöd och den expertis du behöver för att uppnå dina mål på fastighetsmarknaden.</P>
+                        <div class="btnwrap">
+                        <a href="bookingpage.html"> <button>BOKA NU</button></a>
+                    </div>
+                </div>
+
+                
+                <div class="service-container-reveal reveal left">
+                    
+                    <img src="img/restaurant.jpg" alt="" width="500px">
+                    
+                    <h2>Restauranger</h2>
+                    <P>Om du letar efter professionella städtjänster i hela Sverige kan du boka dem enkelt genom Bookey. Vi samarbetar med ett antal pålitliga städföretag som erbjuder en rad olika rengöringstjänster för både privatpersoner och företag.
+
+                        Våra städtjänster inkluderar allt från regelbunden hemstädning och fönsterputsning till flyttstädning och storstädning. Vi kan också ordna specialrengöring, som till exempel rengöring efter renovering eller sanering efter skadedjur.
+                        
+                        Alla våra städföretag är noga utvalda och har erfarna och pålitliga städare som arbetar noggrant och effektivt för att ge dig en ren och fräsch miljö. Vi använder också miljövänliga och hållbara rengöringsprodukter för att minimera vår påverkan på miljön.
+                        
+                        Så om du vill ha en pålitlig och professionell städtjänst i hela Sverige, boka enkelt genom Bookey idag!</P>
+
+                        <a href="bookingpage.html"> <button>BOKA NU</button></a>
+                </div>
+                <div class="service-container-reveal reveal right">
+                    
+                    <img src="img/photo.jpg" alt="" width="500px">
+                    
+                    <h2>Fotografi</h2>
+                    <P>Välkommen till Bookey – din partner för fotografiska tjänster!
+
+                        Vi på Bookey är stolta över att erbjuda högkvalitativa fotografiska tjänster för alla dina behov. Oavsett om du är en blivande brud, en företagsledare som vill ha professionella porträtt eller en organisation som vill dokumentera en viktig händelse, är vi här för att hjälpa dig.
+                        
+                        Våra erfarna och kreativa fotografer har det nödvändiga ögat för att skapa vackra och minnesvärda bilder som kommer att fånga ditt ärende perfekt. Vi är specialiserade på en rad olika fotograferingsstilar, inklusive porträtt, bröllop, företagsevenemang, produktfotografering och mycket mer.
+                        
+                        Vi på Bookey vet hur viktiga dina minnen är för dig, och vi är fast beslutna att leverera enastående tjänster för att säkerställa att dina minnen bevaras för evigt. Och med vår enkla onlinebokning kan du enkelt och bekvämt boka en fotosession med en av våra fotografer.
+                        
+                        Kontakta oss idag för att ta reda på mer om våra fotografiska tjänster och boka din nästa fotosession med Bookey!</P>
+                        <div class="btnwrap">
+                        <a href="bookingpage.html"> <button>BOKA NU</button></a>
+                        </div>
+                </div>
+                <div class="service-container-reveal reveal left">
+                    
+                    <img src="img/transport.jpg" alt="" width="500px">
+                    
+                    <h2>Transport</h2>
+                    <P>Ska du flytta eller frakta någonting stort? Låt Bookey hjälpa dig med vår omfattande transporttjänst! Vi erbjuder ett brett utbud av fordon, från små transportbilar till stora lastbilar, för att säkerställa att dina varor transporteras säkert och effektivt. Oavsett om du behöver transportera enstaka föremål eller hela lass, har vi lösningen för dig.
+
+                        Våra kvalificerade förare har lång erfarenhet av att köra olika fordon och tar hand om dina föremål med omsorg och precision. Vi tar även hand om all nödvändig pappersarbete och tillstånd, så att du inte behöver oroa dig för det.
+                        
+                        Och det bästa av allt? Du kan enkelt boka din transport online på Bookey, vilket sparar tid och gör det enklare för dig att få jobbet gjort. Så oavsett om du flyttar till en ny lägenhet eller behöver frakta varor till en annan stad, lita på Bookey för att göra din transport så smidig och problemfri som möjligt.</P>
+                       
+                        <a href="bookingpage.html"> <button>BOKA NU</button></a>
+                    
+                </div>
+         
+
+            <div class="about">
+                <h1>Varför oss?</h1>
+                <div class="work">
+                    <span>
+                        <i class="fa fa-lock" style="font-size: 4rem; " id="secure"></i>
+                        <h5>Säker</h5>
+                        <p> Vår webbplats är säker och skyddad med den senaste tekniken för att skydda dina uppgifter och säkerställa en trygg användarupplevelse </p>
+                    </span>
+
+                    <span>
+                        <i class="fa fa-book" style="font-size: 4rem;" id="secure"></i>
+                        <h5>Enkel bokning</h5>
+                        <p>Det är superenkelt att göra en reservation på vår webbplats.</p>
+                    </span>
+
+                    <span>
+                        <i class="fa fa-user"style="font-size: 4rem; " aria-hidden="true"></i>
+                        <h5>Användarrecensioner</h5>
+                        <p>Vi är stolta över våra positiva kundrecensioner och strävar alltid efter hög kvalitet och att överträffa förväntningar.  </p>
+                    </span>
+
+                    <span>
+                        <i class="fa fa-thumbs-up" style="font-size: 4rem;" id="secure"></i>
+                        <h5>Rekommenderad</h5>
+                        <p>Användare rekommenderar vår webbplats för vår användarvänliga design, kvalitativa innehåll och tillförlitliga tjänster. Vi är stolta över att vara så uppskattade av våra användare!</p>
+                    </span>
+                </div>
+
+
+                <div class="aboutbookey">
+                    <h1>Om oss</h1>
+                    <p>Bookey är ett företag som hjälper människor att boka olika tjänster i hela Sverige. Med vår användarvänliga onlineplattform kan du enkelt söka och boka olika tjänster på ett säkert och tillförlitligt sätt. Oavsett om du behöver boka transport, fotografering, renovering, städning, fastigheter eller restauranger, kan du lita på Bookey för att hitta den bästa tjänsten för dina behov. Vårt mål är att göra bokningsprocessen enkel och smidig för våra kunder och vi strävar alltid efter att leverera hög kvalitet och god kundservice. Med Bookey, kan du snabbt och enkelt boka de bästa tjänsterna i hela Sverige.</p>
+                </div>
+            </div>
+
+            
+    </main>
+
+    <footer>
+        <img src="img/bottomlogo.png" alt="" id="bottomlogo">
+        <span>
+        <label for="konto">KONTO</label>
+        <ul id="konto">
+          <a href="login.html">  <li>Logga In</li></a>
+          <a href="adminpage.html">  <li>Adminpanel</li></a>
+            
+        </ul>
+    </span>
+    <span>
+        <label for="kategorier">KATEGORIER</label>
+        <ul id="kategorier">
+            <a href="#"><li>Hemsida</li> </a>
+           <a href="bookingpage.html"> <li>Transport</li> </a>
+           <a href="bookingpage.html"> <li>Fotografi</li></a>
+           <a href="bookingpage.html"> <li>Renovering</li></a>
+           <a href="bookingpage.html"> <li>Städning</li></a>
+           <a href="bookingpage.html"> <li>Fastigheter</li></a>
+           <a href="bookingpage.html"> <li>Restauranger</li></a>
+        </ul>
+    </span>
+    <span>
+        <label for="kontakt">KONTAKT</label>
+        <ul id="kontakt">
+            <li>info@bookey.se</li>
+            <li>Bookey Sverige AB</li>
+            <li>Org.nr: 559296-5056 </li>
+        </ul>
+    </span>
+    </footer>
+</body>
+</html>

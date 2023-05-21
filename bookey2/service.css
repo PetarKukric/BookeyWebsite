@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=PT+Sans+Narrow&family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
+font-family: 'Roboto Slab', serif;
+   background-color: rgb(189, 188, 188);
+    position: relative;
+     
+}
+
+header{
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url(img/wp2019315.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    
+}
+.searchtrack{
+
+    background-color: white;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+header h1{
+   
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.445);
+    font-size: 3rem;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 5vh;
+    width: fit-content;
+
+}
+.headertrack{
+    display: flex;
+      
+      background-color: black;
+      color: white;
+      margin: auto;
+      padding: 20px;
+      border-radius: 50px;
+      justify-content: space-evenly;
+  }
+  .headertrack input{
+      background-color: black;
+      color:gray;
+      border: none;
+      padding: 15px;
+      border-radius: 10%;
+  }
+  .headertrack i{
+      color: #43884b;
+      font-size: 1.5rem;
+   
+  }
+  select{
+    background-color: black;
+    color:gray;
+    border: none;
+    padding: 15px;
+    border-radius: 10%;
+}
+  .headertrack button{
+      background-color: #43884b;
+      color: black;
+      border: none;
+      border-radius: 50px;
+      padding: 10px;
+      width: 100px;
+      transition: 0.5s;
+  }
+  .headertrack button:hover{
+    background-color: #326938;
+    font-size: 1.3rem;
+  }
+nav{
+    
+
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    
+}
+nav button{
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.514);
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.514);
+    padding: 10px;
+    margin-inline: 20px;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    transition: .5s;
+}
+
+nav  button:hover{
+    background-color: #43884b;
+    color: white;
+    border: 2px transparent solid;
+
+}
+#loginbtnhome:hover{
+    background-color: white;
+    color: #43884b;
+    border: 2px transparent solid;
+}
+
+main{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.services{
+    width: 60%;
+}
+.map{
+    width: 40%;
+    position: sticky;
+    left: 100%;
+    top:0;
+    height: 100vh;
+}
+.service{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 20vh;
+}
+.service img{
+    width: 300px;
+    border-radius: 20px;
+    float: left;
+    margin-right: 20px;
+}
+.service h3{
+    font-size: 1.5rem;
+}
+.service i{
+    display: block;
+    margin-top: 20px;
+}
+.socialmedia{
+    display: flex;
+   margin-top: 50px;
+    
+}
+.socialmedia i{
+    font-size: 2rem;
+    margin-inline: 20px;
+}
+
+.services button{
+    background-color: transparent;
+    color: black;
+
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'PT Sans Narrow', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-weight: bold;
+transition: .5s;
+}
+.services button:hover{
+    background-color: #326938;
+    color: white;
+    border: 2px solid transparent;
+}
+.btnwrap{
+    text-align: center;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+ul li{
+    list-style-type: none;
+    padding: 10px;
+}
+footer label{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+@media screen and (width<1200px) {
+    .headertrack{
+        width: 100%;
+        left: 0;
+        flex-direction: column;
+        padding: 0;
+        border-radius: 25px;
+        padding: 0 0 5px 8px;
+    }
+    header h1{
+        font-size: 2.5rem;
+    }
+    .service img{
+        width: 200px;
+    }
+    .service h3{
+        font-size: .9rem;
+       }
+       .service button{
+        font-size: 1.1rem;
+        padding: 5px;
+       }
+       .service i{
+        font-size: 1.1rem;
+        
+       }
+       .socialmedia{
+        margin-top: 10px;
+       }
+       .socialmedia i{
+        margin-inline: 10px;
+       }
+
+
+}
+@media screen and (width<1025px) {
+    #bottomlogo{
+        display: none;
+    }
+    
+    footer{
+        padding: 25px;
+        flex-wrap: wrap;
+    }
+    footer span label{
+        font-size: .8rem;
+    }
+}
+@media  screen and (width<768px) {
+    .map{
+        display: none;
+    }
+    .services{
+        width: 100%;
+    }
+}
+@media screen and (425px<width<=695px) {
+    
+    header h1{
+        font-size: 2rem;
+    }
+    
+    
+    nav button{
+        display: block;
+        margin: 4px;
+        font-size:.9rem;
+    }
+   
+}   
+@media screen and (width < 426px){
+    .service img{
+        width: 150px;
+        
+        float: left;
+    }
+    .service{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        margin-inline: 2px;
+    }
+    .service i{
+        font-size: .7rem;
+        margin: 2px;
+    }
+    #toplogo{
+       display: none;
+    }
+    nav button{
+        font-size: .9rem;
+        margin-top: 10px;
+    }
+}
+@media screen and (width<375px){
+    header h1{
+        font-size: 1.5rem;
+    }
+    .headertrack label{
+        font-size: 1rem;
+    }
+}
+#bottomlogo{
+    width: 200px;
+    height: 120px;
+}

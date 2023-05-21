@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logga In Bookey</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <section class="login" id="loginpage">
+        <h1>Logga In</h1>
+        
+        <span>
+        <label for="fullname"><i class="fa fa-user" style="font-size: 3rem; " aria-hidden="true"></i></label>
+        <input type="text" id="fullname" >
+    </span>
+
+        <span>
+        <label for="pass"> <i class="fa fa-lock" style="font-size: 3rem; " id="secure"></i></label>
+        <input type="password" id="pass">
+    </span>
+    <p>Behöver du hjälp med att logga in? <a href="">Glömde mitt lösenord</a></p>
+    <div class="btnwrap">
+    <button id="loginbtn" onclick="hideSignUpPage()">Logga In</button>
+    <button style="background-color: white; color: #43884b; border: 2px solid #43884b;"  id="signinbtn" onclick="hideLogInPage()">Bli Medlem</button>
+</div>
+<div style="text-align: center;">
+    <a href="index.html">Gå tillbaka till startsidan</a>
+    </div>
+   
+</section>
+
+<section class="singup" id="signuppage">
+    
+        <h1>Bli Medlem</h1>
+        
+        <span>
+        <label for="fullname"><i class="fa fa-user" style="font-size: 3rem; " aria-hidden="true"></i></label>
+        <input type="text" id="fullname" >
+    </span>
+
+    <span>
+        <label for="email"> <i class="fa fa-envelope" style="font-size: 2.7rem; " ></i></label>
+        <input type="email" id="email">
+    </span>
+
+        <span>
+        <label for="pass"> <i class="fa fa-lock" style="font-size: 3rem; "></i></label>
+        <input type="password" id="pass">
+    </span>
+   
+    <div class="btnwrap">
+        <button style="background-color: white; color: #43884b; border: 2px solid #43884b;"  id="loginbtn" onclick="hideSignUpPage()">Logga In</button>
+    <button  id="signinbtn" onclick="hideLogInPage()">Bli Medlem</button>
+
+</div>
+<div style="text-align: center;">
+<a href="index.html">Gå tillbaka till startsidan</a>
+</div>
+</section>
+    </div>
+    <script src="main.js">// Get references to the login and signup sections
+       
+        </script>
+</body>
+</html>

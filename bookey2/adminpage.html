@@ -1,0 +1,207 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="adminpanel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <header>
+        <h1>Adminpanel</h1>
+        <i class="fa fa-bars" aria-hidden="true" style="font-size: 2.5rem;" id="bars" onclick="showOrHideMenu()"></i>
+    </header>
+    <main id="main">
+        <div class="maincontent" id="maincont">
+        <h2>Lade till företag</h2>
+        <hr>
+    </div>
+        <aside id="asidemenu">
+            <h2>Lägg till nya företag</h2>
+            <hr>
+            <section class="add">
+                <h4>Lägg till</h4>
+                <div>  
+                    <label for="image">Bild</label>
+                    <input type="file" id="image" accept=".jpg,.jpeg,.png">
+                </div>
+                <div>
+                <label for="place">Plats</label>
+                <input type="text" id="place">
+            </div>
+                <div>
+                <label for="category">Kategori</label>
+                <select name="category" id="category">
+                    <option value="photograph">Fotografi</option>
+                    <option value="constren">Bygg & Renovering</option>
+                    <option value="cleaning">Städning</option>
+                    <option value="transport">Flytt & Transport</option>
+                    <option value="properties">Fastigheter & BRF</option>
+                    <option value="economy">Ekonomi & juridik</option>
+                </select>
+            </div>
+                <div>
+                <label for="date">Datum</label>
+                <input type="date" id="date">
+            </div>
+            <div>
+                <label for="time">Tid</label>
+                <input type="time" id="time">
+            </div>
+            <div>
+                <label for="youtube">Youtube URL</label>
+                <input type="text" id="youtube">
+            </div>
+            <div>
+                <label for="insta">Instagram URL</label>
+                <input type="text" id="insta">
+            </div>
+            <div>
+                <label for="face">Facebook URL</label>
+                <input type="text" id="face">
+            </div>
+            <div>
+                <label for="twitter">Twitter URL</label>
+                <input type="text" id="twitter">
+            </div>
+                <div>
+            <label for="coordinates">Coordinates:</label>
+            <input type="text" id="coordinates" name="coordinates" pattern="-?\d+(\.\d+)?,\s*-?\d+(\.\d+)?" >
+        </div>
+            <div class="btnwrap"><Button>Lägg till</Button></div>
+            </section>
+            <br>
+            <hr>
+            <section class="remove">
+                <h4>Ta bort företaget</h4>
+                <div>
+                    <label for="category">Kategori</label>
+                    <select name="category" id="category">
+                        <option value="photograph">Fotografi</option>
+                        <option value="constren">Bygg & Renovering</option>
+                        <option value="cleaning">Städning</option>
+                        <option value="transport">Flytt & Transport</option>
+                        <option value="properties">Fastigheter & BRF</option>
+                        <option value="economy">Ekonomi & juridik</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="name">Namn</label>
+                    <input type="text" id="name">
+                </div>
+                
+
+                <div class="btnwrap remove" ><Button>Ta bort den</Button></div>
+            </section>
+           <a href="index.html"><p>Gå tillbaka till startsidan</p> </a>
+        </aside>
+        <div class="services">
+            <div class="service">
+                <img src="img/handyhearoes.png" alt="">
+                <h3>*NAME OF THE SERVICE*</h3>
+                <i class="fa fa-map-marker" aria-hidden="true"> *LOCATION OF THE SERVICE*</i>
+                <i class="fa fa-clock-o" aria-hidden="true"> *TIME*</i>
+                <section class="socialmedia">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </section>
+                <div class="btnwrap">
+               <a href="bookpage.html"> <button>Boka Nu</button></a>
+            </div>
+            </div>
+            <div class="service">
+                <img src="img/cederblad.png" alt="">
+                <h3>*NAME OF THE SERVICE*</h3>
+                <i class="fa fa-map-marker" aria-hidden="true"> *LOCATION OF THE SERVICE*</i>
+                <i class="fa fa-clock-o" aria-hidden="true"> *TIME*</i>
+                <section class="socialmedia">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </section>
+                <div class="btnwrap">
+                   <a href="bookpage.html"> <button>Boka Nu</button></a>
+                </div>
+            </div>
+            <div class="service">
+                <img src="img/construsction.jpg" alt="">
+                <h3>*NAME OF THE SERVICE*</h3>
+                <i class="fa fa-map-marker" aria-hidden="true"> *LOCATION OF THE SERVICE*</i>
+                <i class="fa fa-clock-o" aria-hidden="true"> *TIME*</i>
+                <section class="socialmedia">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </section>
+                <div class="btnwrap">
+                   <a href="bookpage.html"> <button>Boka Nu</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img src="img/bottomlogo.png" alt="" id="bottomlogo">
+        <span>
+        <label for="konto">KONTO</label>
+        <ul id="konto">
+          <a href="login.html">  <li>Logga In</li></a>
+          <a href="adminpage.html">  <li>Adminpanel</li></a>
+            
+        </ul>
+    </span>
+    <span>
+        <label for="kategorier">KATEGORIER</label>
+        <ul id="kategorier">
+            <a href="index.html"><li>Hemsida</li> </a>
+           <a href="bookingpage.html"> <li>Transport</li> </a>
+           <a href="bookingpage.html"> <li>Fotografi</li></a>
+           <a href="bookingpage.html"> <li>Renovering</li></a>
+           <a href="bookingpage.html"> <li>Städning</li></a>
+           <a href="bookingpage.html"> <li>Fastigheter</li></a>
+           <a href="bookingpage.html"> <li>Restauranger</li></a>
+        </ul>
+    </span>
+    <span>
+        <label for="kontakt">KONTAKT</label>
+        <ul id="kontakt">
+            <li>info@bookey.se</li>
+            <li>Bookey Sverige AB</li>
+            <li>Org.nr: 559296-5056 </li>
+        </ul>
+    </span>
+    
+    </footer>
+
+    <script>
+        let aside = document.getElementById('asidemenu');
+        let main = document.getElementById('maincont');
+        let body = document.getElementById('body');
+        function showOrHideMenu(){
+            if(aside.style.display==="block"){
+                aside.style.display = "none";
+               
+              
+            }else{
+                aside.style.display ="block";
+                
+               
+            }
+            if(aside.style.display==="none"){
+                main.style.width="100%"
+        }else{
+                main.style.width="70%";
+            }
+        
+        }
+        
+    </script>
+</body>
+</html>

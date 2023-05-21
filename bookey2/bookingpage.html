@@ -1,0 +1,145 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renovering</title>
+    <link rel="stylesheet" href="service.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bungee&display=swap" rel="stylesheet">
+<script src="main.js"></script>
+</head>
+<body>
+    <header style="overflow-x: hidden;">
+            
+       
+   
+            <nav style="background-color: transparent;">
+                <img src="img/toplogo.png" alt="" width="200px" id="toplogo">
+                
+                <div class="buttons">
+                    
+                <button id="signupbtnhome" onclick="openSignUpPage()">Skapa ett konto</button>
+                <button id="loginbtnhome" onclick="openLogInPage()">Logga In</button>
+            </div>
+            </nav>
+            <section class="maintrack">  
+        <h1>Sök efter tjänster</h1>
+        <div class="headertrack">
+            <div class="categorys">
+            <label for="headertrack">Välj tjänst (kategori)</label>
+            <select name="category" id="category">
+                <option value="photograph">Fotografi</option>
+                <option value="constren">Bygg & Renovering</option>
+                <option value="cleaning">Städning</option>
+                <option value="transport">Flytt & Transport</option>
+                <option value="properties">Fastigheter & BRF</option>
+                <option value="economy">Ekonomi & juridik</option>
+            </select>
+        </div>
+
+        <div class="place">
+            <label for="location">Ange plats</label>
+            <input type="text" name="location" id="location" placeholder="plats">
+            <i class="fa fa-map-marker"  ></i>
+        </div>
+        <div class="datse">
+            <label for="date">Datum</label>
+            <input type="date" name="date" required pattern="\d{4}-\d{2}-\d{2}" placeholder="yyyy-mm-dd">
+        </div>
+        <div class="time">
+            <label for="time">Tid</label>
+            <input type="time" id="time" placeholder="tid">
+        </div>
+        <div class="btnwrap">
+           <button>  <b> Sök  </b></button>
+        </div>
+        </div>
+        </section>
+    </header>
+    <main>
+        <div class="services">
+            <div class="service">
+                <img src="img/handyhearoes.png" alt="">
+                <h3>*NAME OF THE SERVICE*</h3>
+                <i class="fa fa-map-marker" aria-hidden="true"> *LOCATION OF THE SERVICE*</i>
+                <i class="fa fa-clock-o" aria-hidden="true"> *TIME*</i>
+                <section class="socialmedia">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </section>
+                <div class="btnwrap">
+               <a href="bookpage.html"> <button>Boka Nu</button></a>
+            </div>
+            </div>
+            <div class="service">
+                <img src="img/cederblad.png" alt="">
+                <h3>*NAME OF THE SERVICE*</h3>
+                <i class="fa fa-map-marker" aria-hidden="true"> *LOCATION OF THE SERVICE*</i>
+                <i class="fa fa-clock-o" aria-hidden="true"> *TIME*</i>
+                <section class="socialmedia">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </section>
+                <div class="btnwrap">
+                   <a href="bookpage.html"> <button>Boka Nu</button></a>
+                </div>
+            </div>
+            <div class="service">
+                <img src="img/construsction.jpg" alt="">
+                <h3>*NAME OF THE SERVICE*</h3>
+                <i class="fa fa-map-marker" aria-hidden="true"> *LOCATION OF THE SERVICE*</i>
+                <i class="fa fa-clock-o" aria-hidden="true"> *TIME*</i>
+                <section class="socialmedia">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                </section>
+                <div class="btnwrap">
+                   <a href="bookpage.html"> <button>Boka Nu</button></a>
+                </div>
+            </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130265.83887335887!2d17.81724957664303!3d59.3262131083916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f763119640bcb%3A0xa80d27d3679d7766!2sStockholm%2C%20%C5%A0vedska!5e0!3m2!1shr!2sba!4v1683978517568!5m2!1shr!2sba" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+    </main>
+
+    <footer>
+        <img src="img/bottomlogo.png" alt="" id="bottomlogo">
+        <span>
+        <label for="konto">KONTO</label>
+        <ul id="konto">
+           <a href="login.html"><li>Logga In</li></a> 
+            <a href="adminpage.html">  <li>Adminpanel</li></a>
+        </ul>
+    </span>
+    <span>
+        <label for="kategorier">KATEGORIER</label>
+        <ul id="kategorier">
+            <a href="index.html"><li>Hemsida</li> </a>
+           <a href="bookingpage.html"> <li>Transport</li></a>
+           <a href="bookingpage.html"><li>Fotografi</li></a> 
+           <a href="bookingpage.html"> <li>Renovering</li></a>
+           <a href="bookingpage.html"> <li>Städning</li></a>
+           <a href="bookingpage.html"> <li>Fastigheter</li></a>
+           <a href="bookingpage.html"> <li>Restauranger</li></a>
+        </ul>
+    </span>
+    <span>
+        <label for="kontakt">KONTAKT</label>
+        <ul id="kontakt">
+            <li>info@bookey.se</li>
+            <li>Bookey Sverige AB</li>
+            <li>Org.nr: 559296-5056 </li>
+        </ul>
+    </span>
+    </footer>
+    
+</body>
+</html>
